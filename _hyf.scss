@@ -1,0 +1,83 @@
+
+@import "variables";
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    background-color: map-get($map: $palette, $key: 'primario');
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    img {
+        height: 70px;
+        margin-right: 10px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: map-get($map: $palette, $key: 'cuarto');
+}
+
+.nav-link {
+    color: map-get($map: $palette, $key: 'quinto');
+    font-weight: bold;
+}
+
+/* Footer */
+
+.footer-contac {
+    position: absolute;
+    width: 91%;
+    height: 60px;
+    justify-content: space-between;
+    background-color: map-get($map: $palette, $key: 'secundario');
+    align-items: center;
+    padding: 10px;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    background-color: map-get($map: $palette, $key: 'secundario');
+    align-items: center;
+    padding: 10px;
+}
+
+.footernav {
+    ul li {
+        display: inline-block;
+    }
+    a {
+        font-weight: 600;
+        padding-right: 10px;
+        font-size: 30px;
+    }
+}
+
+.lista-footer li {
+    list-style: none;
+}
+
+/* Footer */
+
+.footernav {
+    a {
+        &:hover {
+            color: map-get($map: $palette, $key: 'tercero');
+        }
+    }
+}

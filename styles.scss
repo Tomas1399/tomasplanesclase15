@@ -1,0 +1,22 @@
+@import "hyf";
+
+@import "contacto";
+
+@import "variables";
+
+@import "index";
+
+@import "nosotros";
+
+
+/* dejo este aca porque no me lo toma en otro lado y no entiendo porque */
+.contact-form form button {
+    background: map-get($map: $palette, $key: 'secundario');
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    font-weight: bold;
+}
+
+
+
